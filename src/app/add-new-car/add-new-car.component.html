@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="inputCarValue" placeholder="new car">
+<button (click)="addNewCar()">add car</button>
+<button (click)="removeLastCar()">remove last car</button>
+<p *ngFor="let car of cars$ | async">{{car}}</p>
+
+<hr>
+
+<app-car-detail></app-car-detail>
